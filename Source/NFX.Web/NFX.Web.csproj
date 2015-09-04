@@ -69,6 +69,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
@@ -78,6 +79,22 @@
     <Compile Include="EMail\IMailer.cs" />
     <Compile Include="EMail\MailerSink.cs" />
     <Compile Include="EMail\SMTPMailerSink.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\GoogleDriveMimeType.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\Auth\JsonWebToken.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\ApiUrls.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\Extensions.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\Ensure.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\GoogleDriveClient.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\GoogleDriveMetadata.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\GoogleDriveFileSystem.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\GoogleDriveCredentials.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\GoogleDriveCapabilities.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\GoogleDriveParameters.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\GoogleDriveHandle.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\GoogleDrivePath.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\GoogleDriveRequestBody.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\GoogleDriveSession.cs" />
+    <Compile Include="IO\FileSystem\GoogleDrive\V2\GoogleDriveStream.cs" />
     <Compile Include="MultiPartContent.cs" />
     <Compile Include="Pay\Account.cs" />
     <Compile Include="Pay\ActualAccountData.cs" />
